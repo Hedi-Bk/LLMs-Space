@@ -24,6 +24,7 @@ Fine-tuning of the LLaMA 2–7B model using the **QLoRA** method:
 - **Supervised Fine-Tuning (SFT)** on a 1M curated dataset
 - Achieved **training loss = 1.36**
 - Runtime: **1634s**, Steps/s: **0.153**, FLOPs: **8.7e15**
+- We used **Hugging Face** for the Fine Tune
 
 ### Training Metrics Overview
 
@@ -35,6 +36,29 @@ Fine-tuning of the LLaMA 2–7B model using the **QLoRA** method:
 | **Samples / sec** | **0.612**       |
 | **Steps / sec**   | **0.153**       |
 | **Total FLOPs**   | **8.75 × 10¹⁵** |
+
+### **2. Fine-Tuning Phi-3-Mini with QLoRA & Unsloth (500 Samples)**
+
+**Project Link** : [![View on GitHub](https://img.shields.io/badge/QLoRA-Fine--Tuning-green?logo=github)](https://github.com/Hedi-Bk/Fine-Tuning-Phi-3-with-QLoRA-Unsloth)
+
+Specialized fine-tuning of the **Microsoft Phi-3-Mini** model for structured data extraction:
+
+- **Optimization**: Leveraged **Unsloth** for 2x faster training and 70% less VRAM usage.
+- **Method**: **QLoRA** (4-bit quantization) with Rank-64 adapters.
+- **Task**: Supervised Fine-Tuning (SFT) for **HTML-to-JSON** data extraction.
+- **Efficiency**: Fully compatible with free-tier GPU (Tesla T4) via Google Colab.
+- **Inference**: Merged model exported to 16-bit for seamless production deployment.
+
+### Training Metrics Overview
+
+| Metric | Value |
+| --- | --- |
+| **Model** | **Phi-3-Mini** |
+| **Rank (r)** | **64** |
+| **Alpha** | **128** |
+| **Dataset Size** | **500 Samples** |
+| **Quantization** | **4-bit (NF4)** |
+| **Library** | **Unsloth** |
 
 ####  Feel free to explore the code, experiment with the notebooks, and adapt the ideas for your own projects!
 <p align="center">
