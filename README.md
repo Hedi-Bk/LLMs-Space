@@ -15,15 +15,12 @@ Showcasing my projects in Large Language Models: Fine-Tuning, Optimization & App
  **Project Link** : 
 [![View on GitHub](https://img.shields.io/badge/QLoRA-Fine--Tuning-green?logo=github)](https://github.com/Hedi-Bk/Fine_Tune_Llama2_7b)
 
- 
 
 Fine-tuning of the LLaMA 2–7B model using the **QLoRA** method:
 
 - Base model quantized in **NF4**
 - Full-precision **LoRA adapters**
-- **Supervised Fine-Tuning (SFT)** on a 1M curated dataset
-- Achieved **training loss = 1.36**
-- Runtime: **1634s**, Steps/s: **0.153**, FLOPs: **8.7e15**
+- **Supervised Fine-Tuning (SFT)** on a 1k curated dataset
 - We used **Hugging Face** for the Fine Tune
 
 ### Training Metrics Overview
