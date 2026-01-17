@@ -10,7 +10,7 @@ Showcasing my projects in Large Language Models: Fine-Tuning, Optimization & App
 
 ## **Featured Projects**
 
-### **1. Fine-Tuning LLaMA 2–7B with QLoRA (1M Samples)**
+### **1. Fine-Tuning LLaMA 2–7B with QLoRA (1k Samples)**
 
  **Project Link** : 
 [![View on GitHub](https://img.shields.io/badge/QLoRA-Fine--Tuning-green?logo=github)](https://github.com/Hedi-Bk/Fine_Tune_Llama2_7b)
